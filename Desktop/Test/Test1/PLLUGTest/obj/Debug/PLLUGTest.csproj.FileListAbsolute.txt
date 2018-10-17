@@ -1,0 +1,7 @@
+D:\PLLUG\PLLUGTest\PLLUGTest\bin\Debug\PLLUGTest.exe.config
+D:\PLLUG\PLLUGTest\PLLUGTest\bin\Debug\PLLUGTest.exe
+D:\PLLUG\PLLUGTest\PLLUGTest\bin\Debug\PLLUGTest.pdb
+D:\PLLUG\PLLUGTest\PLLUGTest\obj\Debug\PLLUGTest.csprojAssemblyReference.cache
+D:\PLLUG\PLLUGTest\PLLUGTest\obj\Debug\PLLUGTest.csproj.CoreCompileInputs.cache
+D:\PLLUG\PLLUGTest\PLLUGTest\obj\Debug\PLLUGTest.exe
+D:\PLLUG\PLLUGTest\PLLUGTest\obj\Debug\PLLUGTest.pdb

@@ -5,3 +5,10 @@ D:\PLLUG\PLLUGTest\PLLUGTest\obj\Debug\PLLUGTest.csprojAssemblyReference.cache
 D:\PLLUG\PLLUGTest\PLLUGTest\obj\Debug\PLLUGTest.csproj.CoreCompileInputs.cache
 D:\PLLUG\PLLUGTest\PLLUGTest\obj\Debug\PLLUGTest.exe
 D:\PLLUG\PLLUGTest\PLLUGTest\obj\Debug\PLLUGTest.pdb
+D:\educational\DotNet\Desktop\Test\Test1\PLLUGTest\bin\Debug\PLLUGTest.exe.config
+D:\educational\DotNet\Desktop\Test\Test1\PLLUGTest\bin\Debug\PLLUGTest.exe
+D:\educational\DotNet\Desktop\Test\Test1\PLLUGTest\bin\Debug\PLLUGTest.pdb
+D:\educational\DotNet\Desktop\Test\Test1\PLLUGTest\obj\Debug\PLLUGTest.csprojAssemblyReference.cache
+D:\educational\DotNet\Desktop\Test\Test1\PLLUGTest\obj\Debug\PLLUGTest.csproj.CoreCompileInputs.cache
+D:\educational\DotNet\Desktop\Test\Test1\PLLUGTest\obj\Debug\PLLUGTest.exe
+D:\educational\DotNet\Desktop\Test\Test1\PLLUGTest\obj\Debug\PLLUGTest.pdb

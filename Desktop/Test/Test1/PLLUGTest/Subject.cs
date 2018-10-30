@@ -18,37 +18,49 @@ namespace Test3_OOP
             WriteLine("Якщо куб введіть 1\nЯкщо куля введіть 2");
             WriteLine("Якщо циліндр введіть 3");
 
-            Form = ToInt32(ReadLine());
+            string input = ReadLine();
+            int temp = 0;
 
-            if (Form == 1)
+            if (Int32.TryParse(input, out temp))
             {
-                Console.WriteLine("Ви вибрали куб");
+                Form = temp;
 
-                Console.WriteLine("Введіть ширину:");
-                CubeWidth = Convert.ToDouble(Console.ReadLine());
+                if (Form == 1)
+                {
+                    Console.WriteLine("Ви вибрали куб");
 
-                Console.WriteLine("Введіть висоту:");
-                CubeHeight = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введіть ширину:");
+                    CubeWidth = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("Введіть глибину:");
-                CubeDepth = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Введіть висоту:");
+                    CubeHeight = Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("Введіть глибину:");
+                    CubeDepth = Convert.ToDouble(Console.ReadLine());
+                }
+                else if (Form == 2)
+                {
+                    WriteLine("Ви вибрали кулю");
+
+                    WriteLine("Введіть діаметр кулі:");
+                    BallDiameter = ToDouble(ReadLine());
+                }
+                else if (Form == 3)
+                {
+                    WriteLine("Ви вибрали цилінд");
+
+                    WriteLine("Введіть діаметр:");
+                    CylinderDiameter = ToDouble(ReadLine());
+
+                    WriteLine("Введіть висоту:");
+                    CylinderHeight = ToDouble(ReadLine());
+                }
             }
-            else if (Form == 2)
+            else
             {
-                WriteLine("Ви вибрали кулю");
-
-                WriteLine("Введіть діаметр кулі:");
-                BallDiameter = ToDouble(ReadLine());
-            }
-            else if (Form == 3)
-            {
-                WriteLine("Ви вибрали цилінд");
-
-                WriteLine("Введіть діаметр:");
-                CylinderDiameter = ToDouble(ReadLine());
-
-                WriteLine("Введіть висоту:");
-                CylinderHeight = ToDouble(ReadLine());
+                WriteLine("\n!!!Ви ввели некоректне значення!!! Програма завершить роботу. Натисніть любу кнопку.\n");
+                ReadKey();
+                Environment.Exit(0);
             }
         }
 

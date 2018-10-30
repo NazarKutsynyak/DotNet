@@ -63,28 +63,40 @@ namespace Test3_OOP
         
         public void Set()
         {
+            
             WriteLine("Привіт! Введіть будьласка форму отвору");
             WriteLine("Якщо круг, введіть 1");
             WriteLine("Якщо прямокутник, введіть 2");
             WriteLine("Якщо трикутник, введіть 3");
+            string input = ReadLine();
+            int temp = 0;
 
-            Form = ToInt32(ReadLine());
-
-            if (Form == 1)
+            if (Int32.TryParse(input, out temp))
             {
-                Ring.Set();                
-            }
+                Form = temp;
 
-            if (Form == 2)
+                if (Form == 1)
+                {
+                    Ring.Set();
+                }
+
+                if (Form == 2)
+                {
+                    Rectangle.Set();
+                }
+
+                if (Form == 3)
+                {
+                    Triangle.Set();
+                }
+            }
+            else
             {
-                Rectangle.Set();                
+                WriteLine("\n!!!Ви ввели некоректне значення!!! Програма завершить роботу. Натисніть любу кнопку.\n");
+                ReadKey();
+                Environment.Exit(0);
+                
             }
-
-            if (Form == 3)
-            {
-                Triangle.Set();
-            }
-
         }
     }
 }

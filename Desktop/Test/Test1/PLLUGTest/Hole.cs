@@ -71,32 +71,45 @@ namespace Test3_OOP
             string input = ReadLine();
             int temp = 0;
 
-            if (Int32.TryParse(input, out temp))
+            do
             {
-                Form = temp;
 
-                if (Form == 1)
+                if (Int32.TryParse(input, out temp))
                 {
-                    Ring.Set();
+                    if (temp < 4 && temp > 0)
+                    {
+                        Form = temp;
+
+                        if (Form == 1)
+                        {
+                            Ring.Set();
+                        }
+
+                        if (Form == 2)
+                        {
+                            Rectangle.Set();
+                        }
+
+                        if (Form == 3)
+                        {
+                            Triangle.Set();
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        WriteLine("__!!!!!Ви ввели некоректне значення!!!!!___");
+                    }
+                }
+                else
+                {
+                    WriteLine("\n!!!Ви ввели некоректне значення!!! Програма завершить роботу. Натисніть любу кнопку.\n");
+                    ReadKey();
+                    Environment.Exit(0);
+
                 }
 
-                if (Form == 2)
-                {
-                    Rectangle.Set();
-                }
-
-                if (Form == 3)
-                {
-                    Triangle.Set();
-                }
-            }
-            else
-            {
-                WriteLine("\n!!!Ви ввели некоректне значення!!! Програма завершить роботу. Натисніть любу кнопку.\n");
-                ReadKey();
-                Environment.Exit(0);
-                
-            }
+            } while (true);
         }
     }
 }

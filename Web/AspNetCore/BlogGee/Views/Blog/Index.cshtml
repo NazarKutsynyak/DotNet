@@ -1,0 +1,22 @@
+@model IEnumerable<BlogGee.Models.Post>
+@{
+    Layout = null;
+}
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BlogGee</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+    <script src=""></script>
+</head>
+<body>
+    @foreach (var post in Model)
+    {
+        <p><h2>@post.Title</h2></p>
+        
+        <p><h3>@post.Content</h3></p>
+    }
+</body>
+</html>

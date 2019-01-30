@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using BlogGee.Models;
 
 namespace BlogGee
 {
@@ -20,6 +22,9 @@ namespace BlogGee
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var connection = "Data Source=BlogGee.db";
+            services.AddDbContext<BlogGeeContext>(options => options.UseSqlite(connection));
+
             services.AddMvc();
         }
 

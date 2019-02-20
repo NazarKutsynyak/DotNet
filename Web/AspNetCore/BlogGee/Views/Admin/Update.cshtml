@@ -1,0 +1,14 @@
+@model IEnumerable<BlogGee.Models.Post>
+@{
+    ViewBag.Title = "AdminPanel";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Editing </h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <input type="submit" value="Save" />
+    @Html.ActionLink("Decline", "Index")
+}

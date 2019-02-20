@@ -1,0 +1,24 @@
+@model IEnumerable<BlogGee.Models.Post>
+@{
+    ViewBag.Title = "AdminPanel";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div>
+    <div>
+        <h2>List of posts | Admin</h2>
+    </div>
+    <div>
+        @foreach (var item in Model)
+        {
+            <td>
+                <tr>@item.Title</tr><br>
+                <tr>@item.Content</tr><br>
+                <tr>@Html.ActionLink("Edit", "Update", new { id=item.ID })</tr>|
+                <tr>@Html.ActionLink("Details", "Read", new { id=item.ID })</tr>|
+                <tr>@Html.ActionLink("Delete", "Delete", new { id=item.ID })</tr>|
+                <tr>@Html.ActionLink("Create New", "Create")</tr>
+            </td>
+        }
+    </div>
+</div>
